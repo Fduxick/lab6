@@ -1,17 +1,15 @@
-const overlay = document.querySelector('.overlay');
-const text = document.querySelector('.text');
-const button = document.querySelector('.button');
+const overlay = $('.overlay');
+const text = $('.text');
+const button = $('.button');
 
-button.addEventListener('click', onModalOpen);
-overlay.addEventListener('click', onBackDropClick);
+button.click(onModalOpen);
+overlay.click(onBackDropClick);
 
 function onModalOpen() {
-    overlay.classList.remove('is-hidden');
+    overlay.removeClass('is-hidden');
 }
 
 function onBackDropClick() {
-    overlay.classList.add('is-hidden');
+    overlay.addClass('is-hidden');
 }
-
-
 
